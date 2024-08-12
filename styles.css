@@ -1,4 +1,5 @@
 /* Estilos personalizados para WizardTunes */
+@import 'animate.css/animate.min.css';
 
 body {
   background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd);
@@ -26,18 +27,32 @@ body {
 .container {
   max-width: 600px;
   width: 100%;
-  padding: 30px;
-  background-color: rgb(132, 19, 224);
+  padding: 20px;
+  background-color: rgb(126, 53, 125);
   border-radius: 10px;
   color: #f0f0f0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container-border{
+  background-color: rgb(162, 74, 161)
 }
 
 .box-title {
   text-align: center;
+  text-decoration: wavy;
+  text-decoration-style:dotted;
   width: 100%;
-  font-style: italic;
-  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+h5{
+  font-style: normal;
+  font-weight: bold;
+  font-family: monospace;
+  margin-bottom: 14px;
 }
 
 .Controls {
@@ -45,12 +60,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  
 }
 
 .Controls button {
   font-size: 24px;
   padding: 10px;
-  background-color: #6f42c1;
+  background-color: rgb(126, 53, 125);
   border: none;
   border-radius: 50%;
   color: #fff;
@@ -85,7 +101,7 @@ body {
 }
 
 .file-upload-btn {
-  background-color: #6f42c1;
+  background-color: rgb(126, 53, 125);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -95,7 +111,7 @@ body {
 }
 
 .file-upload-btn:hover {
-  background-color: #5a2d91;
+  background-color: rgb(126, 53, 125);
 }
 
 .playlist {
@@ -111,22 +127,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #a667f3;
+  background-color: rgb(158, 66, 157);
   padding: 10px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .playlist li:hover {
-  background-color: #6543e0;
+  background-color:  rgb(83, 35, 83);
   transform: translateY(-5px);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .playlist li.playing {
-  background-color: #6543e0;
+  background-color: rgb(141, 60, 140);
   color: #f0f0f0;
-  border-left: 5px solid #31196b;
+  border-left: 5px solid  rgb(126, 53, 125);
 }
 
 .playlist button {
@@ -155,7 +171,7 @@ body {
 }
 
 #addMusicBtn:hover {
-  background-color: #5a2d91;
+  background-color: #8521ff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 

@@ -2,48 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/2a454fda32.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="img/wizard.png" href="img/wizard.png">
+    <link rel="icon" type="img/wizard.png" href="img/wizard.png" />
     <title>WizardTunes</title>
   </head>
   <body>
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between mb-3">
-        <div class="box-title">
-          <h5>WIZARDTUNES</h5>
+      <div class="box-title">
+        <h5>WIZARDTUNES</h5>
+      </div>
+      <div class="container-border">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <button id="addMusicBtn" class="btn btn-purple rounded-circle">
+            <i class="fa-solid fa-plus"></i>
+          </button>
         </div>
-        <button id="addMusicBtn" class="btn btn-purple rounded-circle">
-          <i class="fa-solid fa-plus"></i>
-        </button>
-      </div>
-      <div class="Controls">
-        <audio id="audioPlayer"></audio>
-        <button id="prevBtn" class="fa-solid fa-backward"> </button>
-        <button id="playPauseBtn" class="fa-solid fa-circle-play"> </button>
-        <button id="nextBtn" class="fa-solid fa-forward"> </button>
-      </div>
-      <div class="progressBars mt-3">
-        <input type="range" id="progressBar" min="0" max="100" value="0" />
-        <div class="d-flex justify-content-between">
-          <span id="currentTime">00:00</span> <span id="duration">00:00</span>
+        <div class="Controls">
+          <audio id="audioPlayer"></audio>
+          <button id="prevBtn" class="fa-solid fa-backward animate__animated animate__pulse"></button>
+          <button id="playPauseBtn" class="fa-solid fa-circle-play animate__animated animate__pulse"></button>
+          <button id="nextBtn" class="fa-solid fa-forward animate__animated animate__pulse"></button>
         </div>
-      </div>
-      <div class="Buttons mt-3">
-        <input type="file" id="fileInput" accept="audio/*" multiple/>
-      </div>
-      <div class="playlist mt-3">
-        <ul id="playlist"></ul>
-      </div>
-      <div class="image">
-        <img src="img/wizard.png" width="100" height="">
-        <img src="img/wizard.png" width="100" height="">
+        <div class="progressBars mt-3">
+          <input type="range" id="progressBar" min="0" max="100" value="0" />
+          <div class="d-flex justify-content-between">
+            <span id="currentTime">00:00</span> <span id="duration">00:00</span>
+          </div>
+        </div>
+        <div class="Buttons mt-3">
+          <input type="file" id="fileInput" accept="audio/*" multiple />
+        </div>
+        <div class="playlist mt-3">
+          <ul id="playlist"></ul>
+        </div>
+        <div class="image">
+          <img src="img/wizard.png" width="100" height="" />
+          <img src="img/wizard.png" width="100" height="" />
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
