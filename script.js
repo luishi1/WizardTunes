@@ -1,4 +1,3 @@
-import 'animate.css';
 
 document.addEventListener("DOMContentLoaded", () => {
   const audioPlayer = document.getElementById("audioPlayer");
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentTrackIndex = -1;
 
   addMusicBtn.addEventListener("click", () => {
-    fileInput.click(); 
+    fileInput.click(); // Simula un clic en el input de archivo
   });
 
   fileInput.addEventListener("change", (event) => {
@@ -82,11 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
   playPauseBtn.addEventListener("click", () => {
     if (audioPlayer.paused) {
         audioPlayer.play();
-        playPauseBtn.classList.remove("fa-circle-play");
+        playPauseBtn.classList.remove("fa-circle-play"); // Cambia a pausa
         playPauseBtn.classList.add("fa-circle-pause");
     } else {
         audioPlayer.pause();
-        playPauseBtn.classList.remove("fa-circle-pause"); 
+        playPauseBtn.classList.remove("fa-circle-pause"); // Cambia a play
         playPauseBtn.classList.add("fa-circle-play");
     }
 });
