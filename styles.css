@@ -1,4 +1,4 @@
-/* Estilos personalizados para WizardTunes */
+
 @import 'animate.css/animate.min.css';
 
 body {
@@ -61,6 +61,28 @@ h5{
   justify-content: center;
   gap: 15px;
   
+}
+
+.playlist {
+  margin-top: 20px;
+  max-height: 280px;
+  overflow-y: auto; 
+}
+
+.playlist::-webkit-scrollbar {
+  width: 8px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+  background-color: #6f42c1; 
+}
+
+.playlist::-webkit-scrollbar-thumb:hover {
+  background-color: #8521ff;
+}
+
+.playlist::-webkit-scrollbar-track {
+  background: #f0f0f0; 
 }
 
 .Controls button {
@@ -153,7 +175,33 @@ h5{
   cursor: pointer;
 }
 
-/* Estilo para el botón de añadir música como ícono redondo */
+.playlist-item {
+  position: relative;
+  padding-right: 40px; 
+  overflow: hidden; 
+}
+
+.remove-btn {
+  position: absolute;
+  right: -40px; 
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #ff0019;
+  font-size: 16px;
+  cursor: pointer;
+  transition: right 0.3s ease; 
+}
+
+.playlist-item:hover .remove-btn {
+  right: 10px;
+}
+
+.img-left{
+  transform: scaleX(-1);
+}
+
 #addMusicBtn {
   background-color: #6f42c1;
   color: white;
@@ -180,6 +228,6 @@ h5{
 }
 
 .image{
-  display: flex; /* Correcto: usa 'flex' */
-  gap: 350px; 
+  display: flex; 
+  gap: 360px; 
 }
